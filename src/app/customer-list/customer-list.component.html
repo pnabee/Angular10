@@ -1,0 +1,42 @@
+<h2> Customer List !</h2>
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th> Custid</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let customer of customers"> 
+            <td>{{customer.custid}}</td>
+            <td>{{customer.name}}</td>
+            <td>{{customer.address}}</td>
+            <td>
+                <button (click) = "getCustVehicles(customer.custid)" class = "btn btn-info" style="margin-left: 10px">View</button>
+                    <h2>  Vehicle Details !</h2>
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th> Vehicle Id</th>
+            <th>RegistrationNumber</th>
+            <th>Status</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let vehicle of vehicles"> 
+            <td>{{vehicle.vid}}</td>
+            <td>{{vehicle.registrationNumber}}</td>
+            <td>{{vehicle.status}}</td>
+            
+        </tr>
+    </tbody>
+</table>
+                
+
+            </td>
+        
+    </tbody>
+</table>
