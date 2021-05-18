@@ -18,7 +18,7 @@ export class CustomerDetailsComponent implements OnInit {
   vehicles: Vehicle[]=[];
 
 constructor(private router: ActivatedRoute, private customerService: CustomerService, private vehicleService: VehicleService) { 
-  this.vehicles=[];
+  
 }
   
   ngOnInit(): void {
