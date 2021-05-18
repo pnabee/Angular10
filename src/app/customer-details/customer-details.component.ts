@@ -15,12 +15,7 @@ export class CustomerDetailsComponent implements OnInit {
 
   custid!: string
   customer!: Customer;
-  //vid!: string;
-  //vehicles: Vehicle[]=[];
-  //vehicle!: Vehicle;
-  //vehicles: Observable<Vehicle>;
-
-  vehicles: any;
+  vehicles: Vehicle[]=[];
 
 constructor(private router: ActivatedRoute, private customerService: CustomerService, private vehicleService: VehicleService) { 
   this.vehicles=[];
